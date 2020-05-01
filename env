@@ -1,0 +1,16 @@
+# This is a file holding the environment variables to configure your project.
+# feel free to change them according to your actual configuration. In order to
+# load the variables in your shell, please type `source env`. If you're using
+# PyCharm, you can use the "Env File" plugin to load this file automatically
+# into your running environment.
+
+DEBUG=yes
+
+BERNARD_SETTINGS_FILE=/code/src/did_the_rocket_launch_yet/settings.py
+BERNARD_BASE_URL=http://localhost:8666
+WEBVIEW_SECRET_KEY=RikzxGR37Lj24cOg]vvu/k]EzOyu14[QN]Z]DHnkNKLF[SsP3a
+
+BERNARD_BASE_URL=http://localhost:8666
+TELEGRAM_TOKEN=1234
+
+REDIS_URL=redis://redis

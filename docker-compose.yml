@@ -1,0 +1,24 @@
+
+version: '3'
+services:
+  bernard:
+    image: python:3.6.10-buster
+    ports:
+      - 8666:8666
+    container_name: bernard_app
+    env_file: env
+    working_dir: /code
+    volumes:
+        - .:/code
+    command: sh -c "pip install pip==18.1; pip install --no-cache-dir -r requirements.txt && python manage.py run"
+    depends_on:
+      - redis
+    restart: unless-stopped
+  redis:
+      image: redis:3.2.11
+      container_name: redis_bernard_app
+      env_file:
+        - env
+      restart: unless-stopped
+volumes:
+  db_volume:

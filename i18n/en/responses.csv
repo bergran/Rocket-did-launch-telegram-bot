@@ -1,0 +1,12 @@
+ERROR,Woops. Something went wrong.
+CONFUSED,It seems that I can't understand what you're saying. Please try another way to say it.
+HELLO,Hello!
+WELCOME, Welcome {name}! are you ready to tell us when rocket did launch?
+YES_START, Yes! Im ready
+NO_START, Nope. Im coward
+YES_LAUNCH, Yes
+NO_LAUNCH, No
+LAUNCH, Did the rocket launch?
+PLAY_AGAIN, Want to play again?
+WIN, Congrats
+DONT_PLAY, If you want to play again execute /start command
