@@ -8,6 +8,7 @@ from bernard.platforms.telegram import layers as tll
 
 from src.did_the_rocket_launch_yet.states.base import BaseStateRocket
 from src.did_the_rocket_launch_yet.store import cs
+from datetime import datetime
 
 
 class WinState(BaseStateRocket):
@@ -15,7 +16,7 @@ class WinState(BaseStateRocket):
     @cs.inject()
     async def handle(self, context) -> None:
         self.send(
-            lyr.Text(t.WIN),
+            lyr.Text(t('WIN', now_guess=str(datetime.now()))),
             lyr.Text(t.PLAY_AGAIN),
             tll.InlineKeyboard([
                 [tll.InlineKeyboardCallbackButton(

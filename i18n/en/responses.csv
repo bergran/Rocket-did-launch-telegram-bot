@@ -8,5 +8,5 @@ YES_LAUNCH, Yes
 NO_LAUNCH, No
 LAUNCH, Did the rocket launch?
 PLAY_AGAIN, Want to play again?
-WIN, Congrats
+WIN, Congrats you guess on {now_guess}
 DONT_PLAY, If you want to play again execute /start command
